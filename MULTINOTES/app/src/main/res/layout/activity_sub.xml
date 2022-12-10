@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvLBLThoiGian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời Gian:"
+                android:textColor="#131212"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/edtTimeNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12:30"
+                android:textColor="#191717"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/swtCheck"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:switchMinWidth="65dp"
+                android:thumbTint="@drawable/switch_thumb"
+                android:trackTint="@drawable/switch_track"
+                android:text="Thông Báo" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="input Title"
+                android:inputType="textPersonName"
+                android:text="Set DVR"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Input Content"
+                android:singleLine="false"
+                android:text="12:00 am Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nProin placerat mi eget magna volutpat convallis. Vivamus justo leo, accumsan ac vulputate vitae, gravida quis mauris." />
+
+            <ImageView
+                android:id="@+id/imgHinhAnh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars"
+                android:scaleType="centerInside"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

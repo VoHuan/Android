@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuItem_relative"
+        android:title="Relative Layout" />
+    <item
+        android:id="@+id/menuItem_linear"
+        android:title="Linear Layout" />
+    <item
+        android:id="@+id/menuItem_table"
+        android:title="Table Layout" />
+    <item
+        android:id="@+id/menuItem_inf"
+        android:title="More information" />
+
+</menu>
